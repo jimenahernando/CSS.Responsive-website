@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"/>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Collab</title>
+  </head>
+  <body>
+      <div class="mobile-navigation" id="mobile-navigation">
+          <div class="mobile-navigation-header">
+            <img src="img/Collab..png" alt="" class="logo" />
+            <div class="close-button" onclick="toggleMobileNavigation()">
+                <button>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+          </div>
+        <a href="" class="mobile-navigation-item mobile-navigation-item-active">Home</a>
+        <a href="" class="mobile-navigation-item">About</a>
+        <a href="" class="mobile-navigation-item">Services</a>
+        <a href="" class="mobile-navigation-item">Contact</a>
+      </div>
+    <div id="container">
+      <header>
+        <img src="img/Collab..png" alt="" class="logo" />
+        <nav class="navigation">
+          <a href="" class="navigation-item navigation-item-active">Home</a>
+          <a href="" class="navigation-item">About</a>
+          <a href="" class="navigation-item">Services</a>
+          <a href="" class="navigation-item">Contact</a>
+        </nav>
+
+        <div class="menu-button" onclick="toggleMobileNavigation()">
+            <button>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <button class="navigation-button">Get Started</button>
+      </header>
+      <main>
+        <div class="main-content">
+          <h1 class="headline">Collaborate Like <br>
+            Never Before</h1>
+          <p class="description">
+              Proin consequat eros in dolor rhoncus, in pellentesque justo feugiat. Nunc nec porttitor sapien, vel congue diam.
+          </p>
+
+          <button class="play-button">
+            <i class="fa fa-play-circle"></i>Discover Video
+          </button>
+        </div>
+        <div class="main-img">
+          <img src="img/data-x1.png" alt="" />
+        </div>
+      </main>
+      <footer>
+        <div class="socials">
+          <a href="" class="socials-item"><i class="fab fa-instagram"></i></a>
+          <a href="" class="socials-item"><i class="fab fa-twitter"></i></a>
+          <a href="" class="socials-item"><i class="fab fa-youtube"></i></a>
+        </div>
+        <span>Thu Nghiem</span>
+      </footer>
+    </div>
+    <script>
+        function toggleMobileNavigation(){
+            const element = document.getElementById("mobile-navigation");
+            if(element.classList.contains("mobile-navigation-open")){
+                element.classList.remove("mobile-navigation-open");
+            } else {
+                element.classList.add("mobile-navigation-open");
+            }
+        }
+    </script>
+  </body>
+</html>
